@@ -1,2 +1,15 @@
-# modified-jjencode
-Just a modified jjencode algorithm to make the result more unreadable
+# Modified jjencode
+
+Just a modified [jjencode](http://utf-8.jp/public/jjencode.html) algorithm to make the result more unreadable.
+
+## Usage
+
+```javascript
+const jjencoded = modifiedJjencode(jsCode);
+```
+
+### Example
+
+```javascript
+modifiedJjencode('alert(0);') === "ᱺ=+[],ᱺ={ꓽꓽꓽ:ᱺ,ᱺᱺᱺᱺ:(![]+'')[ᱺ],ꓽꓽᱺ:++ᱺ,ᱺꓽᱺꓽ:(![]+'')[ᱺ],ꓽᱺꓽ:++ᱺ,ᱺꓽᱺᱺ:({}+'')[ᱺ],ᱺᱺꓽᱺ:(ᱺ.ᱺ+'')[ᱺ],ꓽᱺᱺ:++ᱺ,ᱺᱺᱺꓽ:(!''+'')[ᱺ],ᱺꓽꓽ:++ᱺ,ᱺꓽᱺ:++ᱺ,ᱺᱺꓽꓽ:({}+'')[ᱺ],ᱺᱺꓽ:++ᱺ,ᱺᱺᱺ:++ᱺ,ᱺꓽꓽꓽ:++ᱺ,ᱺꓽꓽᱺ:++ᱺ},ᱺ.ᱺꓽ=(ᱺ.ᱺꓽ=ᱺ+'')[ᱺ.ᱺꓽᱺ]+(ᱺ.ꓽᱺ=ᱺ.ᱺꓽ[ᱺ.ꓽꓽᱺ])+(ᱺ.ᱺᱺ=(ᱺ.ᱺ+'')[ᱺ.ꓽꓽᱺ])+((!ᱺ)+'')[ᱺ.ꓽᱺᱺ]+(ᱺ.ꓽꓽ=ᱺ.ᱺꓽ[ᱺ.ᱺᱺꓽ])+(ᱺ.ᱺ=(!''+'')[ᱺ.ꓽꓽᱺ])+(ᱺ.ꓽ=(!''+'')[ᱺ.ꓽᱺꓽ])+ᱺ.ᱺꓽ[ᱺ.ᱺꓽᱺ]+ᱺ.ꓽꓽ+ᱺ.ꓽᱺ+ᱺ.ᱺ,ᱺ.ᱺᱺ=ᱺ.ᱺ+(!''+'')[ᱺ.ꓽᱺᱺ]+ᱺ.ꓽꓽ+ᱺ.ꓽ+ᱺ.ᱺ+ᱺ.ᱺᱺ,ᱺ.ᱺ=(ᱺ.ꓽꓽꓽ)[ᱺ.ᱺꓽ][ᱺ.ᱺꓽ],ᱺ.ᱺ(ᱺ.ᱺ(ᱺ.ᱺᱺ+'\''+ᱺ.ᱺꓽᱺꓽ+(![]+'')[ᱺ.ꓽᱺꓽ]+ᱺ.ᱺᱺᱺꓽ+'\\'+ᱺ.ꓽꓽᱺ+ᱺ.ᱺᱺꓽ+ᱺ.ꓽᱺꓽ+ᱺ.ꓽꓽ+'('+ᱺ.ꓽꓽꓽ+');'+'\'')())()";
+```
